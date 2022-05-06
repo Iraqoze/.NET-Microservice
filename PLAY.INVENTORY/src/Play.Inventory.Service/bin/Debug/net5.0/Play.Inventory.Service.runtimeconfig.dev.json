@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\iraqo\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\iraqo\\.nuget\\packages"
+    ]
+  }
+}

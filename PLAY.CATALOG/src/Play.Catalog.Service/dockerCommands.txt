@@ -1,0 +1,20 @@
+//docker run -d --rm --name mongo -p 27017:27017 -v mongodbdata:/data/db mongo
+
+Packaging a nuget pck with new version
+//dotnet pack -p:PackageVersion=1.0.2 -o ..\..\..\Packgs\
+
+// running the docker file
+docker-compose up -d
+
+//Adding a nuget package
+dotnet add package Play.Catalog.Contracts
+
+//Adding reference to a class library
+dotnet add reference ..\Play.Catalog.Contracts\Play.Catalog.Contracts.csproj
+
+
+//Creating a class library
+dotnet new classlib n Play.Catalog.Contracts -framework net5.0
+
+//PAckaging a nuget package
+dotnet pack -o ..\..\..\packages\
